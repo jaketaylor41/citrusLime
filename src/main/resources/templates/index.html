@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Home</title>
+    <link rel="stylesheet" th:href="@{/bootstrap.css}"/>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+
+
+    <script type="text/javascript" th:src="@{/jquery.js}"></script>
+    <script type="text/javascript" th:src="@{/client.js}"></script>
+</head>
+<body>
+<h1 align="center">MLJ Lemonade!</h1>
+<p align="center">Welcome to the worlds most refreshing lemonade to ever hit the market. Your taste buds will thank you. </p>
+<div class="row">
+    <button onclick="goLog()" class="btn btn-info">Order History</button>
+</div>
+<div class="container" align="center">
+    <div id="StrawLemon" class="card" style="width: 18rem;">
+        <img class="card-img-top" th:src="@{'/images/' + ${'lemonade'} + '.jpg'}" alt="jpg" />
+        <div class="card-body">
+            <p class="card-text">Lemons hand picked from the tree in Moms backyard and made with real genuine cane sugar. </p>
+            <p class="card-text">Classic Lemonade $3.00</p>
+            <input id="strawberry" placeholder="Enter Quantity"/>
+        </div>
+    </div>
+</div>
+<div class="container" align="center">
+    <div id="regLemon" class="card" style="width: 18rem;">
+        <img class="card-img-top" th:src="@{'/images/' + ${'milkyway'} + '.jpg'}" alt="jpg" />
+        <div class="card-body">
+            <p class="card-text">MilkyWay $2.00</p>
+            <input id="regular" placeholder="Enter Quantity"/>
+        </div>
+    </div>
+</div>
+<div class="Continue" align="right">
+    <button onclick="goCheckout()" class="btn btn-info">Continue</button>
+</div>
+</body>
+</html>

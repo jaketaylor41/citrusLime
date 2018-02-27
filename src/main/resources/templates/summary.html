@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Order Summary</title>
+    <link rel="stylesheet" th:href="@{/bootstrap.css}"/>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+
+
+    <script type="text/javascript" th:src="@{/jquery.js}"></script>
+    <script type="text/javascript" th:src="@{/client.js}"></script>
+</head>
+<body>
+<h1>Order Summary</h1>
+
+<div class="row">
+    <div class="row" th:each="entry : ${mathrepo}">
+        <div class="col-md-12">
+            <ul>
+                <li th:text="'Classic Lemonade: ' + ${entry.regQty}" class="solution"></li>
+                <li th:text="'MilkyWay: ' + ${entry.strQty}" class="solution"></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+    <!--<div class="row">-->
+    <!--<div class="row" th:each="entry : ${mathrepo}">-->
+    <!--<div class="col-md-12">-->
+        <!--<p th:text="'Classic Lemonade: ' + ${entry.regQty}" class="solution"></p>-->
+    <!--</div>-->
+    <!--<div class="row" th:each="entry : ${mathrepo}">-->
+        <!--<div class="col-md-12">-->
+        <!--<p th:text="'MilkyWay: ' + ${entry.strQty}" class="solution"></p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+<!--</div>-->
+
+    <button onclick="confirm()" class="btn btn-info">Buy Now</button>
+    <button onclick="goHome()" class="btn btn-info">Return Shopping</button>
+
+
+
+
+</body>
+</html>
