@@ -20,8 +20,8 @@
     </div>
     <div class="row" th:each="entry : ${mathrepo}">
         <div class="col-md-12">
-            <p th:text="'Regular: ' + ${entry.regQty}" class="solution"></p>
-            <p th:text="'Strawberry: ' + ${entry.strQty}" class="solution"></p>
+            <p th:text="'Classic Lemonade: ' + ${entry.strQty}" class="solution"></p>
+            <p th:text="'MilkyWay: ' + ${entry.regQty}" class="solution"></p>
             <p th:text="'Total Price: $' + ${entry.solution}" class="solution"></p>
         </div>
     </div>

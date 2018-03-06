@@ -2,17 +2,59 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
-    <title>Order Summary</title>
+    <title>Order Confirmation</title>
     <link rel="stylesheet" th:href="@{/bootstrap.css}"/>
     <link rel="stylesheet" th:href="@{/style.css}"/>
 
-
     <script type="text/javascript" th:src="@{/jquery.js}"></script>
     <script type="text/javascript" th:src="@{/client.js}"></script>
+
+
 </head>
 <body>
-<div class="row">
-    <div class="row" th:each="entry : ${mathrepo}">
+<div >
+    <p><h1 align="center">MLJ Lemonade Stand</h1></p>
+    <p><h3 align="center">Order Placed</h3></p>
+    <p><h6 align="center">Select the format of your receipt.</h6></p>
+
+    <div class="container" align="center">
+        <div class="row">
+            <div class="row" th:each="entry : ${meow}">
+            </div>
+
+        </div>
+
+        <Div>
+            <a href="https://www.nerdery.com/nerds/scott-bromander">Click HERE to Print Receipt Now</a>
+        </Div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <Div>
+            <a href="https://www.nerdery.com/nerds/scott-bromander">Click HERE to Receive Email Receipt</a>
+        </Div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <Div>
+            <a href="https://www.nerdery.com/nerds/scott-bromander">Click HERE to Exit</a>
+        </Div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p>
+
+        </p>
+
+        <div class="row">
+            <button onclick="goHome()" class="btn btn-info">Return to Shopping</button>
+            <button onclick="goLog()" class="btn btn-info">Order History</button>
+
+
+        </div>
 
     </div>
 </div>

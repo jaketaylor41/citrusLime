@@ -5,9 +5,11 @@ public class UserEntry {
     private String strQty;
     private String solution;
 
+
     public UserEntry(String regQty, String strQty) {
         this.regQty = regQty;
         this.strQty = strQty;
+
 
         int val1 = Integer.parseInt(regQty);
         int val2 = Integer.parseInt(strQty);
@@ -23,7 +25,6 @@ public class UserEntry {
     public void setRegQty(String regQty) {
         this.regQty = regQty;
     }
-
 
     public String getStrQty() {
         return strQty;
